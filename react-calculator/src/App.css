@@ -1,0 +1,90 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -webkit-app-regin: none;
+}
+
+body {
+  background-color: burlywood;
+  place-content: center;
+  height: 100vh;
+  font-size: 2rem;
+  display: grid;
+}
+
+.container {
+  height: 80vh;
+  width: 50vh;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.7);
+}
+
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.5rem;
+}
+
+.screen {
+  color: white;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
+  grid-column: 1/-1;
+}
+
+.btn {
+  display: grid;
+  color: white;
+  background-color: rgb(54, 52, 52);
+  border-radius: 50%;
+  place-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+.light-gray {
+  background-color: gray;
+  color: black;
+}
+
+.light-gray:hover {
+  background-color: white;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orange:hover {
+  background-color: white;
+  color: orange;
+}
+
+.zero {
+  grid-column: 1 / span 2;
+  border-radius: 1rem;
+  place-content: unset;
+  align-items: center;
+  padding-left: 2rem;
+}
